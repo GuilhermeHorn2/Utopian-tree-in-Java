@@ -1,0 +1,49 @@
+package project1;
+
+import java.util.Random;
+import java.util.Scanner;
+
+public class strt {
+
+	public static void main(String[] args) {
+	//Utopian tree|
+	System.out.println();
+	Scanner sc = new Scanner(System.in);
+	String scnd = sc.next();
+    int t = Integer.parseInt(scnd);
+    int v[] = new int[t];
+    for(int i = 0;i < t;i++) {
+    	Scanner sc1 = new Scanner(System.in);
+    	String scnd1 = sc1.next();
+        int t1 = Integer.parseInt(scnd1);
+        v[i] = t1;
+    }
+    for(int i = 0;i < t;i++) {
+    	System.out.println();
+    	System.out.print(h(v[i]));
+    }
+	
+		
+	
+		
+		
+	}
+	public static int h(int n) {
+		//
+		int alt = 0;
+		for(int i = 0;i <= n;i++) {
+			if(i % 2 == 0) {
+				alt++;
+			}
+			if(i % 2 != 0) {
+				alt *= 2;
+			}
+		}
+		return alt;
+	}
+	
+		
+	}
+	
+	
+
